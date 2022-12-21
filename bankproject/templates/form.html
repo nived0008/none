@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<html>
+  <head>
+    <title>New Bank Account Form</title>
+  </head>
+  <body>
+    <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" placeholder="Enter your DOB"><br>
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" placeholder="Enter your Ag"><br>
+      <label for="gender">Gender:</label><br>
+      <input type="radio" id="gender" name="gender" value="male">Male<br>
+      <input type="radio" id="gender" name="gender" value="female">Female<br>
+      <label for="phone">Phone Number:</label><br>
+      <input type="text" id="phone" name="phone"><br>
+      <label for="mail">Email:</label><br>
+      <input type="email" id="mail" name="mail"><br>
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address"></textarea><br>
+      <label for="district">District:</label><br>
+      <select id="district" name="district">
+        <option value="Ernakulam">Ernakulam</option>
+        <option value="Thrissur">Thrissur</option>
+        <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+        <option value="Kozhikode">Kozhikode</option>
+      </select><br>
+      <label for="branch">Branch:</label><br>
+      <select id="branch" name="branch">
+        <option value="Aluva" class="Ernakulam">Aluva</option>
+        <option value="Edapally" class="Ernakulam">Edapally</option>
+        <option value="Guruvayoor" class="Thrissur">Guruvayoor</option>
+        <option value="Thrissur Town" class="Thrissur">Thrissur Town</option>
+        <option value="Thiruvananthapuram" class="Thiruvananthapuram">Thiruvananthapuram</option>
+        <option value="Kozhikode" class="Kozhikode">Kozhikode</option>
+      </select><br>
+      <label for="account">Account Type:</label><br>
+      <select id="account" name="account">
+        <option value="savings">Savings Account</option>
+        <option value="current">Current Account</option>
+      </select><br>
+      <label for="materials">Materials Provided:</label><br>
+      <input type="checkbox" id="materials" name="materials" value="debit card">Debit Card<br>
+      <input type="checkbox" id="materials" name="materials" value="credit card">Credit Card<br>
+      <input type="checkbox" id="materials" name="materials" value="cheque book">Cheque Book<br>
+     <input type="submit" value="Submit">
+<input type="button" value="Logout" onclick="window.location.href='/logout'">
+
+
+</form>
+
+
+</body>
+</html>
